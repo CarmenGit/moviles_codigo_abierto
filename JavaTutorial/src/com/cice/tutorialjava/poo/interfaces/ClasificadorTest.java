@@ -8,7 +8,7 @@ public class ClasificadorTest {
 		try{
 			Racional r=(Racional)Clasificador.getMinimum(list);
 			System.out.println(r);
-		}catch(ComparationException e){
+		} catch(ComparationException e){
 			e.printStackTrace();
 		}
 }

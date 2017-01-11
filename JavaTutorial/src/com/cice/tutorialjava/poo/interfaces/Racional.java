@@ -58,5 +58,19 @@ public class Racional implements Comparable{
 	public void setNumerador(int numerador) {
 		this.numerador = numerador;
 	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		if(!(obj instanceof Racional)) 
+			return false;
+		else{
+			Racional r =(Racional)obj;
+			
+			return true;
+		}
+		return super.equals(obj);
+	}
 	
 }
