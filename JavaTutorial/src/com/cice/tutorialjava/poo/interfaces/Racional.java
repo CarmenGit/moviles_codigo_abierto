@@ -42,7 +42,7 @@ public class Racional implements Comparable{
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
+		// TODO   Auto-generated method stub
 		StringBuffer buffer=new StringBuffer();
 		String sg=(numerador>0 && denominador>0)||(numerador>=0&&denominador<0)?"+":"-";
 		buffer.append(Math.abs(numerador)+"/"+Math.abs(denominador));
