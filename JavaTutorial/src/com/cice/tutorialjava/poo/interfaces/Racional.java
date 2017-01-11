@@ -65,12 +65,26 @@ public class Racional implements Comparable{
 		// TODO Auto-generated method stub
 		if(!(obj instanceof Racional)) 
 			return false;
-		else{
-			Racional r =(Racional)obj;
+		Racional r =(Racional)obj;
+		return (numerador*r.denominador==denominador*r.numerador)?true:false;
 			
-			return true;
-		}
-		return super.equals(obj);
 	}
+
+
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		//return super.hashCode();
+		//Se le pone el mismo hash a todos los objetos para que se decida si son iguales con el Equals
+		//return 1000;
+		int result =17;
+		result =31*result+numerador;
+		result =31*result+denominador;
+		return result;
+	}
+	
+	
+	
+	
 	
 }

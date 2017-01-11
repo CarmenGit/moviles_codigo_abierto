@@ -22,7 +22,7 @@ public class Persona {
 	}
 	
 	//modificador void para indicar que el método no devuelve nada
-	void print(){
+	public void print(){
 		System.out.println("Persona[nombre: " + nombre + ", domicilio: " + domicilio + " ,edad:" + edad + "]");
 		
 	}
