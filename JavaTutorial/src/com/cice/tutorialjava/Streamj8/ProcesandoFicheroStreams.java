@@ -10,7 +10,9 @@ public class ProcesandoFicheroStreams {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {
-			Files.lines(Paths.get("palabras2.txt")).forEach(line->System.out.println(line));
+			//Files.lines(Paths.get("palabras2.txt")).forEach(line->System.out.println(line));
+			//fitramos líneas que tenga más de 10 car
+			Files.lines(Paths.get("palabras2.txt")).filter(line->line.length()>10).forEach(line->System.out.println(line));
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
