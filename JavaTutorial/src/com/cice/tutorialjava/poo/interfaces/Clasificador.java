@@ -5,7 +5,7 @@ public class Clasificador {
 		
 	}
 	
-	public static Object getMinimum(Comparable[] list){
+	public static Object getMinimum(Comparable[] list) throws ComparationException{
 		int min=0;
 		for(int i=1; i<list.length;i++){
 			if(list[min].compareTo(list[i])>0)

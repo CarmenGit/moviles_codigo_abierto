@@ -1,5 +1,6 @@
 package com.cice.tutorialjava.exceptions;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
 public class ExceptionTest {
 
@@ -7,7 +8,7 @@ public class ExceptionTest {
 		// TODO Auto-generated method stub
 		try{
 		FileInputStream in = new FileInputStream("data.txt");
-		}catch(FileNotFounException e){
+		}catch(FileNotFoundException e){
 			
 		}
 
