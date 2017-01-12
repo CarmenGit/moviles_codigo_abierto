@@ -17,12 +17,8 @@ public class OrdenacionPersonasTest {
 		list.add(new Persona("lola", 26));
 		list.add(new Persona("Paco", 14));
 		list.add(new Persona("Eva", 44));
-		Collections.sort(list, new Comparator<Persona>(){
-			
-			public int compare(Persona a1, Persona a2) {
-				return a1.getEdad()-a2.getEdad();
-			}
-		});
+		//con notación lambda, solo válida para interfaces con un solo método versión 8 java
+		Collections.sort(list, (o1,o2)->o1.getEdad()-o2.getEdad());
 		for(Persona p:list){
 			p.print();
 		}
