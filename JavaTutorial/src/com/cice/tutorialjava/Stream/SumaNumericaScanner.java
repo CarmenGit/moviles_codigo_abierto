@@ -27,19 +27,20 @@ public class SumaNumericaScanner {
 						System.out.println("Sumando...." + f);
 						suma+=f;
 				}catch(InputMismatchException e2){
-				  	   sc.next()
-				  	System.out.println("Sumando...." + x);
+				  	   sc.next();
+				  	//System.out.println("Sumando...." + x);
 				
 				}
 				//System.out.println(sc.next());
-			
-		} 
+				}
 			}
-			System.out.println("Suma = ");
+		} 
+				
+			System.out.println("Suma = " + suma);
 			catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		
 
 	}
 

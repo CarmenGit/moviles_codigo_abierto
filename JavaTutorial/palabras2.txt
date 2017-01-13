@@ -1,4 +1,4 @@
-luis manuel bla 24 67 juan bla 23 , 6 89
+luis manuel bla 24 67 juan bla 23.6 89
 juan manuel bla 6
 hola
 pepito
